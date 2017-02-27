@@ -1,0 +1,8 @@
+version: "3"
+services: 
+  web:
+    build: .
+    image: "nt/two-ng2-apps"
+    container_name: "nt_two-ng2-apps"
+    ports:
+     - "8080:80"

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Angular Multiple Apps</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <base href="/">
+
+    <!-- Polyfill(s) for older browsers -->
+    <script src="node_modules/core-js/client/shim.min.js"></script>
+
+    <script src="node_modules/zone.js/dist/zone.js"></script>
+    <script src="node_modules/systemjs/dist/system.src.js"></script>
+
+    <script src="systemjs.config.js"></script>
+    <script>
+      System.import('appone').catch(function(e){ console.error(e); });
+      System.import('apptwo').catch(function(e){ console.error(e); });
+    </script>
+  </head>
+
+  <body>
+    <my-app-one>Loading App One content here ...</my-app-one>
+    <my-app-two>Loading App Two content here ...</my-app-two>
+  </body>
+</html>
