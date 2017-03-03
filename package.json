@@ -7,7 +7,8 @@
     "initOne": "cd App-One/ && npm install && cd node_modules && ln -s ../../ng-shared ng-shared",
     "initTwo": "cd App-Two/ && npm install && cd node_modules && ln -s ../../ng-shared ng-shared",
     "initShared": "cd ng-shared/ && npm install",
-    "build": "npm run buildOne && npm run buildTwo && npm run buildShared",
+    "initIntegrator": "cd node_modules && ln -s ../ng-shared ng-shared",
+    "build": "npm run buildOne && npm run buildTwo && npm run buildShared && npm run initIntegrator",
     "buildOne": "cd App-One/ && npm run build",
     "buildTwo": "cd App-Two/ && npm run build",
     "buildShared": "cd ng-shared/ && npm run build"
