@@ -11,10 +11,10 @@ export class AppComponent  {
   
   constructor(sharedService: SharedService) {
     this.sharedService = sharedService;
-    this.sharedService.publish('da', '1');
-    this.sharedService.publish('da', '2');
-    let subscription3 = this.sharedService.subscribe('da', data => {
-      console.log('sub3: ' + data);
+    this.sharedService.publish('myTopic', '1');
+    this.sharedService.publish('myTopic', '2');
+    let subscription3 = this.sharedService.subscribe('myTopic', data => {
+      console.log('App-Two: subscriber3 on topic "myTopic": ' + data);
     });
   }
 }

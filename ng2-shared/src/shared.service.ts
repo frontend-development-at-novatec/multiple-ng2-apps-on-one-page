@@ -4,25 +4,25 @@ import * as Rx from 'rxjs/Rx';
 
 @Injectable()
 export class SharedService {
-  private _subjects: any;
+  private subjects: any;
 
   constructor() {
-    this._subjects = {};
+    this.subjects = {};
   }
 
   public publish(name: string, data: any): void {
-    let fnName = this._createName(name);
-    this._subjects[fnName] || (this._subjects[fnName] = new Rx.ReplaySubject(1));
-    this._subjects[fnName].next(data);
+    let fnName = this.createName(name);
+    this.subjects[fnName] || (this.subjects[fnName] = new Rx.ReplaySubject(1));
+    this.subjects[fnName].next(data);
   }
 
   public subscribe(name: string, handler: (data: any) => void): Rx.ReplaySubject<any> {
-    let fnName = this._createName(name);
-    this._subjects[fnName] || (this._subjects[fnName] = new Rx.ReplaySubject(1));
-    return this._subjects[fnName].subscribe(handler);
+    let fnName = this.createName(name);
+    this.subjects[fnName] || (this.subjects[fnName] = new Rx.ReplaySubject(1));
+    return this.subjects[fnName].subscribe(handler);
   }
 
-  private _createName(name: string): string {
+  private createName(name: string): string {
     return '$' + name;
   }
 

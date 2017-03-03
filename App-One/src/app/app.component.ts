@@ -10,14 +10,13 @@ export class AppComponent  {
   sharedService: SharedService;
   constructor(sharedService: SharedService) {
     this.sharedService = sharedService;
-    let subscription1 = this.sharedService.subscribe('da', data => {
-       console.log('sub1: ' + data);
+    let subscription1 = this.sharedService.subscribe('myTopic', data => {
+       console.log('App-One: subscriber1 on topic "myTopic": ' + data);
     });
 
-    let subscription2 = this.sharedService.subscribe('da', data => {
-      console.log('sub2: ' + data);
+    let subscription2 = this.sharedService.subscribe('myTopic', data => {
       if (data === '1') {
-        subscription1.unsubscribe();
+        console.log('App-One: subscriber2 on topic "myTopic": ' + data + ' -> unsubscribe.');
         subscription2.unsubscribe();
       }
     });
