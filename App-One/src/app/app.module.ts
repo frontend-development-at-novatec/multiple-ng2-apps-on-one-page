@@ -1,6 +1,6 @@
 import { NgModule }      from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { SharedService, SharedServiceFactory } from 'ng2-shared/service';
+import { SharedService, SharedServiceFactory } from 'ng-shared/service';
 
 import { AppComponent }  from './app.component';
 

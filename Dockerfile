@@ -13,8 +13,8 @@ COPY App-Two/src/app/app.component.js* /usr/share/nginx/html/app-two/app/
 COPY App-Two/src/app/app.module.js* /usr/share/nginx/html/app-two/app/
 
 # copy static content Ng2-Shared
-COPY ng2-shared/service.js* /usr/share/nginx/html/ng2-shared/
-COPY ng2-shared/src/shared.service.js* /usr/share/nginx/html/ng2-shared/src/
+COPY ng-shared/service.js* /usr/share/nginx/html/ng-shared/
+COPY ng-shared/src/shared.service.js* /usr/share/nginx/html/ng-shared/src/
 
 # copy static content Integrator
 COPY favicon.ico /usr/share/nginx/html/favicon.ico

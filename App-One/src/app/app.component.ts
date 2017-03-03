@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { SharedService } from 'ng2-shared/service';
+import { SharedService } from 'ng-shared/service';
 
 @Component({
   selector: 'my-app-one',

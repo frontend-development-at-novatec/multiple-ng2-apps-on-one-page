@@ -1,5 +1,5 @@
 {
-  "name": "ng2-shared",
+  "name": "ng-shared",
   "version": "0.1.0",
   "description": "a shared service for integration of multiple angular2 apps on one page",
   "scripts": {

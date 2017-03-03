@@ -1,15 +1,16 @@
 {
-  "name": "ng2-integrator",
+  "name": "ng-integrator",
   "version": "0.1.0",
   "description": "the integrator for multiple angular 2 apps on one page",
   "scripts": {
-    "install": "npm run initOne && npm run initTwo",
-    "initOne": "cd App-One/ && npm install && cd node_modules && ln -s ../../ng2-shared ng2-shared",
-    "initTwo": "cd App-Two/ && npm install && cd node_modules && ln -s ../../ng2-shared ng2-shared",
+    "install": "npm run initShared && npm run initOne && npm run initTwo",
+    "initOne": "cd App-One/ && npm install && cd node_modules && ln -s ../../ng-shared ng-shared",
+    "initTwo": "cd App-Two/ && npm install && cd node_modules && ln -s ../../ng-shared ng-shared",
+    "initShared": "cd ng-shared/ && npm install",
     "build": "npm run buildOne && npm run buildTwo && npm run buildShared",
     "buildOne": "cd App-One/ && npm run build",
     "buildTwo": "cd App-Two/ && npm run build",
-    "buildShared": "cd ng2-shared/ && npm run build"
+    "buildShared": "cd ng-shared/ && npm run build"
   },
   "author": "Janis Koehr",
   "license": "MIT",

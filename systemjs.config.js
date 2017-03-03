@@ -25,7 +25,7 @@
       '@angular/forms': 'npm:@angular/forms/bundles/forms.umd.js',
 
       // shared service
-      'ng2-shared/service': 'ng2-shared/src/shared.service.js',
+      'ng-shared/service': 'ng-shared/src/shared.service.js',
 
       // other libraries
       'rxjs':                       'npm:rxjs',
