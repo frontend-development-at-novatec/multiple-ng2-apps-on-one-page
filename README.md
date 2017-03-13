@@ -4,6 +4,9 @@ This project is one proof-of-concept prototype corresponding to the novatec blog
 
 [http://blog.novatec-gmbh.de/angular-2-within-multi-page-environments/](http://blog.novatec-gmbh.de/angular-2-within-multi-page-environments/)
 
+**This is not the preferred way to setup some widgets on a multi page environment!**
+Please read the blog in order to get a better understanding why and what's definetly better than the described prototype here.
+
 ## Install and Run the POC
 
 **Docker(-Compose), Nodejs and NPM are required.**
