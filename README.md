@@ -1,3 +1,5 @@
+[![license](https://img.shields.io/github/license/mashape/apistatus.svg?style=flat-square)]( LICENSE )
+
 # Multiple ng2 apps on one page
 
 This project is one proof-of-concept prototype corresponding to the novatec blog post:
