@@ -149,15 +149,15 @@ In conclusion: What can we expect from that?
 
 #### Downsides
 
-*   Noteworthy, as also [stated in the angular code](https://github.com/angular/angular/blob/bec5c5fdad9e1d326e43ad5c4f9f5e17f135b66f/modules/%40angular/platform-browser-dynamic/index.ts#L78):
+Noteworthy, as also [stated in the angular code](https://github.com/angular/angular/blob/bec5c5fdad9e1d326e43ad5c4f9f5e17f135b66f/modules/%40angular/platform-browser-dynamic/index.ts#L78):
 
     ```
     When working within a browser window, there are many singleton resources: cookies, title, location, and others. Angular services that represent these resources must likewise be shared across all Angular applications that occupy the same browser window.
     ```
 
     Consequently the app uses some browser resources which are (like the shared service) shared between all apps. This has to be considered, as it causes conflicts if both use the _@angular/router_, for example.
-*   The Angular **and** dependency versions used by the apps have to be the same. As the dependencies are loaded in the same browser window different versions of the same dependency will cause conflicts. This **limits** the independent development mentioned before somehow.
-*   Load time of multiple apps. The more apps the more load time this solution will result in. At least the dependencies will be loaded only once.
+
+The Angular **and** dependency versions used by the apps have to be the same. As the dependencies are loaded in the same browser window different versions of the same dependency will cause conflicts. This **limits** the independent development mentioned before somehow.
 
 ## Caution
 
