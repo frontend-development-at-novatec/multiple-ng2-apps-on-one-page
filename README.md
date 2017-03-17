@@ -6,7 +6,7 @@
 
 This project is one proof-of-concept prototype corresponding to the novatec blog post:
 
-[http://blog.novatec-gmbh.de/angular-2-within-multi-page-applications/](http://blog.novatec-gmbh.de/angular-2-within-multi-page-applications/)
+[http://blog.novatec-gmbh.de/angular-2-in-a-multi-page-application/](http://blog.novatec-gmbh.de/angular-2-in-a-multi-page-application/)
 
 Please read the blog in order to get a better understanding why and what's definetly better than the described prototype here.
 
